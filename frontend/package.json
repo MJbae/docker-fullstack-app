@@ -966,7 +966,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
-    "test": "mocha"
+    "test": "react-scripts test"
   },
   "author": "",
   "license": "ISC",
