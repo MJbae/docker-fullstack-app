@@ -6,10 +6,10 @@ services:
   - docker
 
 before_install:
-  - docker build -t gentlemj/react-test-app -f ./frontend/Dockerfile.dev ./frontend
+  - docker build -t gentlemj/react-fullstack-app -f ./frontend/Dockerfile.dev ./frontend
 
 script:
-  - docker run -e CI=true gentlemj/react-test-app npm run test -- --coverage
+  - docker run -e CI=true gentlemj/react-fullstack-app npm run test
 
 after_success:
   - docker build -t gentlemj/docker-frontend ./frontend
